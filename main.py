@@ -1,8 +1,8 @@
-from character import Character
+from character import Hero, Enemy
 from time import sleep
 
-hero = Character(name="Hero", health=100, damage=10)
-enemy = Character(name="Enemy", health=95, damage=8)
+hero = Hero(name="Hero", health=100)
+enemy = Enemy(name="Enemy", health=95)
 
 while True:
     hero.attack(enemy)
