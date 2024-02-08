@@ -1,4 +1,5 @@
 from character import Hero, Enemy
+import weapon
 from time import sleep
 
 hero = Hero(name="Hero", health=100)
@@ -11,4 +12,5 @@ while True:
     print(f"{hero.name}'s health: {hero.health} \n"
           f"{enemy.name}'s health: {enemy.health} \n")
 
-    sleep(1)
+    sleep(3)
+    hero.equip(weapon.long_bow)
